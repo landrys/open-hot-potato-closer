@@ -3,6 +3,7 @@ Checks OpenHotPotato Dynamo table for closed hot potatoes and updates accordingl
 
 ### Installation
 PRIVACY
+
 Need to include credentials to the mailer before deploying.
 
 NPM

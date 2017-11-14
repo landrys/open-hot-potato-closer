@@ -10,17 +10,6 @@ var Duration = jsJoda.Duration;
 
 var myMailer = require('js-common'); 
 
-// Need to populate below before deploying to Lambda
-myMailer.creatTransporter({
-    type: "OAuth2",
-    user: "",
-    clientId: "",
-    clientSecret"",
-    refreshToken: "",
-    accessToken: "",
-    expires: 3600
-});
-
 /* 
  * Will check if any  open hot pototoes need to be closed 
  */
