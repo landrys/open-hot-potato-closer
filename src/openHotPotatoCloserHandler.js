@@ -1,7 +1,7 @@
 console.log('Loading event');
 var closer = require('./openHotPotatoCloser');
 
-exports.openHotPotatoes = function(event, context) {
+exports.openHotPotatoCloserHandler = function(event, context) {
 
     // Not using event info 
     console.log("Hello" + JSON.stringify(event, null, '  '));

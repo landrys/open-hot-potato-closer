@@ -13,7 +13,7 @@ var myMailer = require('js-common');
 /* 
  * Will check if any  open hot pototoes need to be closed 
  */
-module.exports.openHotPotatoesCloser = function(store) {
+module.exports.openHotPotatoCloser = function(store) {
 
 	let params = {
 		ExpressionAttributeValues: {

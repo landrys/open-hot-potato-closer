@@ -10,7 +10,6 @@ NPM
 
 ```sh
 npm install
-rm dist/*.zip
 npm run build-aws-zip
 #If have no function on AWS
 npm run create-aws-function
