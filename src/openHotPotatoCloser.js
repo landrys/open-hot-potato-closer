@@ -12,6 +12,7 @@ var myMailer = require('js-common');
 
 /* 
  * Will check if any  open hot pototoes need to be closed 
+ * change
  */
 module.exports.openHotPotatoCloser = function(store) {
 
