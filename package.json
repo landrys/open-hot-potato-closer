@@ -1,0 +1,29 @@
+{
+  "name": "openHotPotatoCloser",
+  "version": "1.0.0",
+  "description": "Checks for closed hot potatoes in OpenHotPotato Dynamo table and updates accordingly.",
+  "main": "src/openHotPotatoCloserHandler.js",
+  "scripts": {
+    "build-aws-zip": "zip -r dist/package.zip src node_modules",
+    "create-aws-function": "aws --profile landrys lambda create-function --function-name openHotPotatoCloserHandler --runtime nodejs6.10 --role arn:aws:iam::419745589400:role/lambda_basic_execution --description 'Checks for closed hot potatoes in OpenHotPotato Dynamo table and updates accordingly.' --handler src/openHotPotatoCloserHandler.openHotPotatoCloserHandler --zip-file fileb://dist/package.zip",
+    "update-aws-function": "aws --profile landrys lambda update-function-code --function-name openHotPotatoCloserHandler --zip-file fileb://dist/package.zip"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [],
+  "author": "Fabio Piergentili",
+  "license": "ISC",
+  "dependencies": {
+    "js-common": "git+https://github.com/landrys/js-common.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landrys/open-hot-potato-closer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/landrys/open-hot-potato-closer/issues"
+  },
+  "homepage": "https://github.com/landrys/open-hot-potato-closer#readme"
+}
