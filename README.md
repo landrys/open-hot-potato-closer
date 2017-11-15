@@ -1,5 +1,5 @@
 # open-hot-potato-closer
-Checks OpenHotPotato Dynamo table for closed hot potatoes and updates accordingly.
+Checks OpenHotPotato Dynamo table for closed hot potatoes and updates the table accordingly.
 
 ### Installation
 
